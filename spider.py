@@ -13,8 +13,8 @@ def fetch_and_save_content(url, filename):
         # 提取标题  
         headings = [heading.get_text(strip=True) for heading in soup.find_all(['h2', 'h3'])]  
   
-        # 提取段落  
-        paragraphs = [paragraph.get_text(strip=True) for paragraph in soup.find_all('p')]  
+        # 提取正文  
+        paragraphs = [paragraph.get_text(strip=True) for paragraph in soup.find_all('h2', 'h3', 'p', 'pre')]  
   
         # 提取代码块  
         code_blocks = [code_block.get_text(strip=True) for code_block in soup.find_all('pre')]  
@@ -52,8 +52,8 @@ def fetch_and_save_content_with_selenium(url, filename):
         # 提取标题  
         headings = [heading.get_text(strip=True) for heading in soup.find_all(['h2', 'h3'])]  
   
-        # 提取段落  
-        paragraphs = [paragraph.get_text(strip=True) for paragraph in soup.find_all('p')]  
+        # 提取正文  
+        paragraphs = [paragraph.get_text(strip=True) for paragraph in soup.find_all('h2', 'h3', 'p', 'pre')]  
   
         # 提取代码块  
         code_blocks = [code_block.get_text(strip=True) for code_block in soup.find_all('pre')]  
