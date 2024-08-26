@@ -1,0 +1,1 @@
+nohup streamlit run DW_app_front.py --server.address 0.0.0.0 --server.port 6006 > output.log 2>&1 &
