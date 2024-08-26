@@ -79,5 +79,5 @@ def fetch_and_save_content_with_selenium(url, filename):
         driver.quit()
 
 
-if __name__ == '__main__':
-    fetch_and_save_content_with_selenium("https://blog.csdn.net/qq_44017116/article/details/141275550?spm=1001.2014.3001.5501", "./data/a.txt")
+# if __name__ == '__main__':
+#     fetch_and_save_content_with_selenium("https://blog.csdn.net/qq_44017116/article/details/141275550?spm=1001.2014.3001.5501", "./data/a.txt")
