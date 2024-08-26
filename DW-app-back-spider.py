@@ -12,3 +12,7 @@ def fetch_content(url: str):
     with open(file_name, "r", encoding="utf-8") as file:
         content = file.read()
     return {"content": content}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)
