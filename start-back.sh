@@ -1,0 +1,1 @@
+nohup uvicorn back_model:app --host 127.0.0.1 --port 8000 > app.log 2>&1 &
